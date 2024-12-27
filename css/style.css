@@ -55,6 +55,7 @@ color: white;
 /*header section*/
 .hero{
   padding-top: 20vh;
+  background-color: #61440a;
 }
 .hero_area {
   z-index: 900;
