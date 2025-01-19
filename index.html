@@ -115,6 +115,63 @@
     margin: 0;
     padding: 0;
 }
+
+.transportation-section {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px;
+  margin: 45px 0px;
+  background-color: #f5f5f5;
+}
+
+ #transport .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px;
+}
+
+#transport .column {
+  flex: 1;
+  padding: 10px;
+}
+
+.transportation-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.transportation-content {
+  max-width: 600px;
+}
+
+.transportation-content h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.transportation-content p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.transportation-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007BFF;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.transportation-button:hover {
+  background-color: #0056b3;
+}
 </style>
 </head>
 
@@ -366,11 +423,6 @@
         <h2>
           what we offer
         </h2>
-        <p>
-          It is a long established fact that a reader will be distracted by
-          the readable content of a page when looking at its layout. The point
-          of using Lorem
-        </p>
       </div>
       <div class="row">
         <div class="col-md-6">
@@ -389,9 +441,7 @@
                 safety first
               </h6>
               <p>
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem
+                Your child’s safety is our top priority. Our facilities are designed with state-of-the-art security measures and a nurturing environment to ensure children feel safe and secure at all times.
               </p>
             </div>
           </div>
@@ -459,9 +509,8 @@
                 small class Size
               </h6>
               <p>
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem
+                We maintain small class sizes to provide personalized attention to each child, fostering individual growth, confidence, and a love for learning in a supportive setting.
+                
               </p>
             </div>
           </div>
@@ -554,9 +603,7 @@
                 infant care
               </h6>
               <p>
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem
+                Our dedicated infant care program focuses on creating a loving and stimulating environment, meeting your baby’s needs with gentle care and thoughtful activities that encourage early development.
               </p>
             </div>
           </div>
@@ -656,9 +703,7 @@
                 cretive lessons
               </h6>
               <p>
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem
+                Inspire curiosity and imagination through our engaging and innovative lesson plans, designed to make learning fun and meaningful for every child.
               </p>
             </div>
           </div>
@@ -679,9 +724,7 @@
                 certified teachers
               </h6>
               <p>
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem
+                Our team of certified and experienced teachers is passionate about nurturing your child’s potential, providing expert guidance and care throughout their educational journey.
               </p>
             </div>
           </div>
@@ -700,9 +743,7 @@
                 happy environment
               </h6>
               <p>
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem
+                We foster a warm and joyful atmosphere where children feel welcome, valued, and excited to explore and grow every day.
               </p>
             </div>
           </div>
@@ -712,6 +753,28 @@
   </section>
 
   <!-- end offer section -->
+
+
+  <!-- transportation_section -->
+
+  <section class="transportation-section layout_padding2" id="transport">
+    <div class="row">
+        <div class="column transportation-content">
+            <h2>Safe and Reliable Transportation</h2>
+            <p>
+                Our school offers a safe, reliable, and punctual transportation system to ensure students
+                reach school and home comfortably. With trained drivers, and dedicated
+                attendants, we prioritize the safety and convenience of our students.
+            </p>
+            <a href="facilities.html" class="transportation-button">Learn More</a>
+        </div>
+        <div class="column">
+            <img src="images/van.jpeg" alt="School Bus">
+        </div>
+    </div>
+</section>
+
+<!-- transportation_section -->
 
   <!-- gallary section -->
    <section class="gallary layout_padding">
