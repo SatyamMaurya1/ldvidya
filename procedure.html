@@ -31,12 +31,22 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
-  <style>
+  <!-- <style>
        
-
+   .register{
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #043f0f;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+   }
     .procedure {
         background: #fff;
-        padding: 20px;
+        padding-left: 2vw;
+        padding-right: 2vw;
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
@@ -87,6 +97,172 @@
     }
 
 
+</style> -->
+
+<style>
+  /* Modernized Styles */
+  .procedure {
+      background: #f8fafc;
+      padding: 3rem 5%;
+      line-height: 1.8;
+  }
+
+  h2 {
+      color: #1e3a8a;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+      border-bottom: 3px solid #3b82f6;
+      text-align: center;
+  }
+
+  h3 {
+      color: #1e3a8a;
+      font-size: 1.8rem;
+      margin: 2.5rem 0 1.5rem;
+      padding-left: 1rem;
+      border-left: 4px solid #3b82f6;
+  }
+
+  h4 {
+      color: #374151;
+      font-size: 1.4rem;
+      margin: 2rem 0 1rem;
+  }
+
+  table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 2rem 0;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      overflow: hidden;
+  }
+
+  th, td {
+      padding: 12px 15px;
+      text-align: left;
+  }
+
+  thead {
+      background: #1e3a8a;
+      color: white;
+  }
+
+  tbody tr:nth-child(even) {
+      background: #f1f5f9;
+  }
+
+  .highlight {
+      background: #e0f2fe;
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin: 2rem 0;
+  }
+
+  .procedure ul {
+      padding-left: 1.5rem;
+      margin: 1rem 0;
+  }
+
+ .procedure li {
+      margin-bottom: 0.8rem;
+      position: relative;
+      padding-left: 1.5rem;
+  }
+
+ .procedure li:before {
+      content: "•";
+      color: #3b82f6;
+      position: absolute;
+      left: 0;
+      font-weight: bold;
+  }
+
+  .register {
+      background: #3b82f6;
+      color: white;
+      padding: 0.5rem 1.5rem;
+      border-radius: 25px;
+      border: none;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+      margin: 0.5rem 0;
+  }
+
+  .register:hover {
+      background: #2563eb;
+      transform: translateY(-2px);
+  }
+
+  ol[type="a"] {
+      list-style-type: lower-alpha;
+      padding-left: 2.5rem;
+      margin: 1rem 0;
+  }
+
+  /* Footer Enhancements */
+  
+
+  /* Responsive Tweaks */
+  @media (max-width: 768px) {
+      .procedure {
+          padding: 1.5rem;
+      }
+      
+      h2 {
+          font-size: 2rem;
+      }
+      
+      table {
+          display: block;
+          overflow-x: auto;
+      }
+  }
+
+  /* Interactive Elements */
+  a {
+      color: #3b82f6;
+      transition: color 0.3s ease;
+  }
+
+  a:hover {
+      color: #1d4ed8;
+  }
+
+  /* Form Styling */
+  .info_form input[type="text"] {
+      border-radius: 25px;
+      padding: 0.8rem 1.5rem;
+      border: 2px solid #bfdbfe;
+  }
+
+  .info_form button {
+      background: #3b82f6;
+      border: none;
+      padding: 0.8rem 2rem;
+      border-radius: 25px;
+      transition: all 0.3s ease;
+  }
+
+  .info_form button:hover {
+      background: #2563eb;
+      transform: translateY(-2px);
+  }
+
+  /* Visual Hierarchy Improvements */
+  .step-number {
+      display: inline-block;
+      background: #3b82f6;
+      color: white;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 32px;
+      margin-right: 1rem;
+  }
 </style>
 </head>
 
@@ -142,7 +318,7 @@
                     <li><a class="dropdown-item" href="#">Something else here</a></li> -->
                   </ul>
                 </li>
-                <li class="nav-item dropdown">
+                <!-- <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Downloads</a>
                   <ul class="dropdown-menu">
@@ -151,7 +327,7 @@
                     <li><hr class="dropdown-divider"></li>
                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                   </ul>
-                </li>
+                </li> -->
 
                 <li class="nav-item ">
                   <a class="nav-link" href="contact.html"> Contact us</a>
@@ -170,12 +346,12 @@
 
 
 
-    <div class="procedure">
+    <div class="procedure layout_padding2">
       <h2>Admission Information</h2>
 
-      <h3>Step 1: Online Registration</h3>
-      <p>The online registration can be done by using <a href="#">this link</a>. Ensure that you are using Internet Explorer 7 or above while registering your child online.</p>
-      <ul>
+      <h3><span class="step-number">1</span>Step 1: Online Registration</h3>
+      <p>For online registration  <a href="#"><button class="register">Click here!</button></a>.</p>
+      <ul><li> Ensure that you are using Internet Explorer 7 or above while registering your child online.</li>
           <li>All fields marked with * are mandatory.</li>
           <li>Parents with existing Parent ID and password must log in.</li>
           <li>Ensure names and dates of birth match the birth certificate or Aadhaar card.</li>
@@ -279,7 +455,7 @@
         </li>
         
       </ul>
-      <h3>Step 2: Entry Level Test</h3>
+      <h3><span class="step-number">2</span>Step 2: Entry Level Test</h3>
       <p>Details of the entry-level test will be shared after registration. Below are the test subjects and their durations:</p>
       <h4>LKG to 5</h4>
       <table>
@@ -344,7 +520,7 @@
           </tbody>
       </table>
 
-      <h3>Step 3: Confirmation of Registration</h3>
+      <h3><span class="step-number">3</span>Step 3: Confirmation of Registration</h3>
       <ul>
           <li>  A nonrefundable registration fee of 10% of the annual Tuition fees will 
             be collected on confirmation of the admission.
@@ -376,7 +552,7 @@
                   previous school has to be submitted.</li>
               </ol>
           
-      <h3>Step 4: Fee Payment</h3>
+              <h3><span class="step-number">4</span>Step 4: Fee Payment</h3>
       <p>Once document are submitted and accepted by the school office parents may proceed to pay 
         the Tuition fees , Book fee and transport fee. Fee receipt will be issued by the school office. 
         </p>
@@ -387,7 +563,7 @@
           <li>Fourth installment: Before 22nd December</li>
       </ul>
 
-      <h3>Step 5: </h3>
+      <h3><span class="step-number">5</span>Step 5: </h3>
       <p>Collection of book and uniforms from the school store by submitting the fee payment receipt. 
         Details of sibling discount can be obtained from the school office.
         </p>

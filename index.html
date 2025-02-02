@@ -119,6 +119,8 @@
 .transportation-section {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 40px 20px;
   margin: 45px 0px;
   background-color: #f5f5f5;
@@ -126,8 +128,16 @@
 
  #transport .row {
   display: flex;
+  
   flex-wrap: wrap;
   margin: -10px;
+}
+
+@media (max-width: 768px) {
+  #transport .row {
+    flex-direction: column;
+    padding: 10px;
+  }
 }
 
 #transport .column {
@@ -228,7 +238,7 @@
                     <li><a class="dropdown-item" href="facilities.html">Facilities</a></li>
                   </ul>
                 </li>
-                <li class="nav-item dropdown">
+                <!-- <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Downloads</a>
                   <ul class="dropdown-menu">
@@ -237,16 +247,16 @@
                     <li><hr class="dropdown-divider"></li>
                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                   </ul>
-                </li>
+                </li> -->
 
                 <li class="nav-item">
                   <a class="nav-link" href="contact.html"> Contact us</a>
-                  <ul class="dropdown-menu">
+                  <!-- <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">Action</a></li>
                     <li><a class="dropdown-item" href="#">Another action</a></li>
                     <li><hr class="dropdown-divider"></li>
                     <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
+                  </ul> -->
                 </li>
               </ul>
             </div>
@@ -262,9 +272,9 @@
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <!-- <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li> -->
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -272,17 +282,14 @@
                 <div class="col-md-6">
                   <div class="detail-box">
                     <h1>
-                      A Perfect Learning Center <br />
-                      <span>
-                        For Your Kids
-                      </span>
-                    </h1>
-                    <p>
-                      It is a long established fact that a reader will be distracted
-                      by the readable content of a page when looking at its layout.
-                      The point of using Lorem Ipsum is that it has a more-or-less
-                      normal distribution of letters, as
-                    </p>
+                      A Premier Learning Hub Shaping <br />
+                      <span> Bright Futures</span>
+                  </h1>
+                  <p>
+                      At our learning center, we nurture young minds with a holistic approach to education. 
+                      Our curriculum is designed to foster creativity, critical thinking, and problem-solving skills, 
+                      ensuring that every child reaches their full potential in a supportive environment.
+                  </p>
                     <div class="btn-box">
                       <a href="" class="btn-1">
                         Read More
@@ -296,6 +303,33 @@
               </div>
             </div>
             <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="detail-box">
+                    <h1>
+                      A Perfect Learning Center <br />
+                      <span>
+                        For Your Kids
+                      </span>
+                    </h1>
+                    <p>
+                      Our institution is committed to providing a stimulating learning experience, blending academics with 
+                      extracurricular activities. We focus on interactive and engaging teaching methods that inspire curiosity 
+                      and a love for lifelong learning.
+                  </p>
+                    <div class="btn-box">
+                      <a href="" class="btn-1">
+                        Read More
+                      </a>
+                      <a href="" class="btn-2">
+                        Contact us
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="carousel-item">
               <div class="row">
                 <div class="col-md-6">
                   <div class="detail-box">
@@ -379,35 +413,7 @@
                 </div>
               </div>
             </div>
-            <div class="carousel-item">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="detail-box">
-                    <h1>
-                      A Perfect Learning Center <br />
-                      <span>
-                        For Your Kids
-                      </span>
-                    </h1>
-                    <p>
-                      It is a long established fact that a reader will be distracted
-                      by the readable content of a page when looking at its layout.
-                      The point of using Lorem Ipsum is that it has a more-or-less
-                      normal distribution of letters, as
-                    </p>
-                    <div class="btn-box">
-                      <a href="" class="btn-1">
-                        Read More
-                      </a>
-                      <a href="" class="btn-2">
-                        Contact us
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          </div> -->
         </div>
 
       </div>
@@ -758,7 +764,7 @@
   <!-- transportation_section -->
 
   <section class="transportation-section layout_padding2" id="transport">
-    <div class="row">
+    <div class="row transport">
         <div class="column transportation-content">
             <h2>Safe and Reliable Transportation</h2>
             <p>
@@ -990,10 +996,11 @@
                 </span>
               </a>
             </div>
-            <p>
+            <!-- <p>
               There are many variations of passages of Lorem Ipsum available,
               but the majority have suffered alteration
-            </p>
+            </p> -->
+            <li>Opening hours Mon-Saturday <br>7:30 Am- 2:30Pm</li>
           </div>
         </div>
         <div class="col-md-3">
@@ -1002,32 +1009,39 @@
               Contact Us
             </h5>
             <p class="pr-0 pr-md-4 pr-lg-5">
-              Donec odio. Quisque volutpat mattis eros.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
-              odio. Quisque volutpat mattis eros
+              <ol type="1">
+                <li>Contact with us L.D vidyamandir@gmail.com</li>
+                <li>Call for Inquiry 9235718680 <br>8874896155</li>
+              </ol>
             </p>
           </div>
         </div>
         <div class="col-md-3">
           <div class="info_insta">
             <h5>
-              INFORMATION
+              ADMISSION
             </h5>
-            <p class="pr-0 pr-md-4 pr-md-5">
+            <!-- <p class="pr-0 pr-md-4 pr-md-5">
               Donec odio. Quisque volutpat mattis eros.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
               odio. Quisque volutpat mattis eros
-            </p>
+            </p> -->
+            <a href="information.html">Admission information</a><br>
+            <a href="procedure.html">Procedure</a><br>
+            <a href="Academics.html">Academics</a>
           </div>
         </div>
         <div class="col-md-3">
           <div class="pl-0 pl-lg-5 pl-md-4">
             <h5>
-              MY ACCOUNT
-
+             ABOUT
             </h5>
-            <p>
+            <!-- <p>
               Donec odio. Quisque volutpat mattis eros.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
               odio. Quisque volutpat mattis eros
-            </p>
+            </p> -->
+            <a href="about.html">About us</a><br>
+            <a href="facilities.html">Facility</a><br>
+            <a href="gallary.html">Gallery Section</a>
 
           </div>
         </div>
